@@ -1,0 +1,20 @@
+server:
+  port: 8000
+  servlet:    context-path: /aluno
+    
+spring:
+  application:    name: prova
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:    show-sql: true
+    hibernate:      ddl-auto: update
+  jmx:
+    enabled: false    
+  datasource:
+    url: jdbc:h2:file:~/db_prova
+    username: sa
+    password:
+    driverClassName: org.h2.Driver         
+    
